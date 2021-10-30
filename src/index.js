@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import AllFiles from './components/allJsFiles';
+import NavbarComponent from './components/navbar';
+import 'bootstrap/dist/css/bootstrap.css';
+import SearchBar from './components/SearchBar';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <AllFiles /> */}
+    <NavbarComponent />
+    <SearchBar />
+    <App name= {{value:20}}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
